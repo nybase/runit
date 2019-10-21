@@ -11,4 +11,4 @@ RUN yum install -y wget make gcc glibc-static ;\
 
 FROM centos:7
 
-COPY --from=builder /package/admin/runit/command/ /usr/local/sbin/ ;
+COPY --from=builder /package/admin/runit/command/ /usr/local/sbin/
