@@ -1,4 +1,4 @@
-FROM centos:7
+FROM centos:8
 
 ENV ver=2.1.2
 
