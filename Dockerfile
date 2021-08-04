@@ -1,6 +1,6 @@
-FROM centos:8
+#FROM centos:8
 
-#FROM rockylinux/rockylinux:8
+FROM rockylinux/rockylinux:8
 
 ENV ver=2.1.2
 
