@@ -11,6 +11,8 @@ RUN dnf install -y dnf-plugins-core || true ; dnf config-manager --enable PowerT
     cp -rf /package/admin/runit/command/* /usr/local/sbin/ ;
 
 
+
+
 ### ERROR ###
 ### /usr/bin/ld: cannot find -lc
 ### seems no glibc-static in centos:8
