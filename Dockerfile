@@ -1,6 +1,6 @@
-FROM  centos:7
+FROM  centos:7 as builder
 #FROM quay.io/centos/centos:stream9 as builder
-#FROM centos:8
+#FROM centos:8 as builder
 #FROM rockylinux/rockylinux:8 as builder
 
 ENV ver=2.1.2
