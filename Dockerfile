@@ -1,4 +1,5 @@
-FROM quay.io/centos/centos:stream9 as builder
+FROM  centos:7
+#FROM quay.io/centos/centos:stream9 as builder
 #FROM centos:8
 #FROM rockylinux/rockylinux:8 as builder
 
