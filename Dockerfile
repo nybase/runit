@@ -1,6 +1,6 @@
+FROM quay.io/centos/centos:stream9 as builder
 #FROM centos:8
-
-FROM rockylinux/rockylinux:8 as builder
+#FROM rockylinux/rockylinux:8 as builder
 
 ENV ver=2.1.2
 
@@ -11,6 +11,7 @@ RUN yum install -y dnf-plugins-core || true ; yum config-manager --enable PowerT
     cp -rf /package/admin/runit/command/* /usr/local/sbin/ ;
 
 
-FROM rockylinux/rockylinux:8
+FROM quay.io/centos/centos:stream9
+#FROM rockylinux/rockylinux:8
 
 COPY --from=builder /package/admin/runit/command/ /usr/local/sbin/
